@@ -6,6 +6,9 @@ set -e
 
 # Support for Apache web server custom ports: env vars HTTP_PORT (80) and HTTPS_PORT (443)
 
+echo "Port is: $PORT"
+echo "Or Port is: ${PORT}"
+
 test -z $HTTP_PORT || sed -i "s/Listen 80/Listen ${PORT}/" /etc/apache2/ports.conf
 test -z $HTTPS_PORT || sed -i "s/Listen 443/Listen ${PORT}/" /etc/apache2/ports.conf
 
