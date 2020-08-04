@@ -1,5 +1,5 @@
 FROM php:7.4-apache
-LABEL maintainer "Nazar Mokrynskyi <nazar@mokrynskyi.com>"
+LABEL maintainer "Vishnu Pradeep"
 
 # Set desired phpMyAdmin version
 
