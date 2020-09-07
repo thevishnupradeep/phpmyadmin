@@ -19,14 +19,14 @@
  * cookie
  * http://www.question-defense.com/tools/phpmyadmin-blowfish-secret-generator
  */
-$cfg['blowfish_secret'] = ''; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
+$cfg['blowfish_secret'] = '$2y$10$Nwq792qSsaOjAmo/iadx5.TYXV8p87hU8fkT51BwVHw6S.2ZAKqCC'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
 /*
  * Servers configuration
  */
 $i = 0;
 
 // Change this to use the project and instance that you've created.
-$host = '';
+$host = '/cloudsql/codewatchman:us-central1:cwmtestdb';
 $type = 'socket';
 
 /*
